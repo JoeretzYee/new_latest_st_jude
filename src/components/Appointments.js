@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../css/Appointments.css";
 import Select from "react-select";
 import axios from "../axios";
 import swal from "sweetalert";
 
 function Appointments() {
+    const navigate = useNavigate();
     const todaysDate = new Date();
 
     const [appointments, setAppointments] = useState([]);
@@ -327,8 +329,15 @@ function Appointments() {
                                                                     Cancel
                                                                 </button>
                                                             ) : (
-                                                                <button className='btn btn-primary'>
-                                                                    View
+                                                                <button
+                                                                    onClick={() =>
+                                                                        navigate(
+                                                                            `/payment`
+                                                                        )
+                                                                    }
+                                                                    className='btn btn-primary'>
+                                                                    Proceed to
+                                                                    Payment
                                                                 </button>
                                                             )}
                                                         </td>
@@ -404,8 +413,15 @@ function Appointments() {
                                                                     Cancel
                                                                 </button>
                                                             ) : (
-                                                                <button className='btn btn-primary'>
-                                                                    View
+                                                                <button
+                                                                    onClick={() =>
+                                                                        navigate(
+                                                                            `/payment`
+                                                                        )
+                                                                    }
+                                                                    className='btn btn-primary'>
+                                                                    Proceed to
+                                                                    Payment
                                                                 </button>
                                                             )}
                                                         </td>
