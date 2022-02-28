@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-5davm!2#vrnhrui+d)ch2@!52x&(i4gvnqyip*b7!ge%n(97wz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['st-jude-management-system.herokuapp.com']
 
 
 # Application definition
@@ -148,7 +148,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'user.UserACcount'
+AUTH_USER_MODEL = 'user.UserAccount'
 
 
 
