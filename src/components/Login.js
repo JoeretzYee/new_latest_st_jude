@@ -25,7 +25,7 @@ function Login() {
         });
     }, []);
 
-    console.log(accounts);
+    
 
     const handleLogin = (e) => {
         e.preventDefault();
