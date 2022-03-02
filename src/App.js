@@ -80,7 +80,7 @@ function App() {
                         <Header />
                         <SideNav />
                         <Routes>
-                            <Route path='/dashboard' element={<Home />} />
+                            <Route path='/' element={<Home />} />
                             <Route path='/patients' element={<Home />} />
                             <Route
                                 path='/view-patient/:id'
