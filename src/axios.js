@@ -1,7 +1,10 @@
 import axios from "axios";
 
+axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
+axios.defaults.xsrfCookieName = "csrftoken";
+
 const instance = axios.create({
-    baseURL: "https://st-jude-management-system.herokuapp.com",
+    baseURL: "http://127.0.0.1:8000",
     headers: {
         "Content-Type": "application/json",
     },

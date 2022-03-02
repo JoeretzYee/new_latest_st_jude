@@ -106,6 +106,8 @@ CORS_ALLOWED_ORIGINS = [
    
 ]
 
+CSRF_COOKIE_NAME = "XSRF-TOKEN"
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
