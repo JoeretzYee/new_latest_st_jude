@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "homepage":".",
-    "proxy": "st-jude-management-system.herokuapp.com",
+    
     "dependencies": {
         "@reduxjs/toolkit": "^1.7.1",
         "@testing-library/jest-dom": "^4.2.4",
