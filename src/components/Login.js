@@ -67,6 +67,7 @@ function Login() {
                 })
 
                 .catch((error) => {
+                    console.log('error in login: ',error)
                     setError("Invalid Credentials");
                 });
         }
